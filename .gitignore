@@ -1,6 +1,19 @@
-*.class
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
 
-# Package Files #
+# java files
+*.class
 *.jar
 *.war
 *.ear
+.project
+.settings/
+.classpath
+.metadata
+.log
+target/
+

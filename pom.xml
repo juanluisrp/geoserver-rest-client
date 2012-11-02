@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.emergya</groupId>
+    <artifactId>geoserver-rest-client</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>geoserver-rest-client</name>
+    <url>http://www.emergya.es</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.8.1</junit.version>
+    </properties>
+
+    <inceptionYear>2012</inceptionYear>
+    <organization>
+        <name>Emergya Consultoria</name>
+        <url>http://www.emergya.es</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>jlrodriguez</id>
+            <name>Juan Luis Rodríguez Ponce</name>
+            <email>jlrodriguez@emergya.com</email>
+            <organization>Emergya Consultoria</organization>
+            <organizationUrl>http://www.emergya.es</organizationUrl>
+            <roles>
+                <role>Analista</role>
+            </roles>
+        </developer>
+    </developers>
+    <scm>
+        <url>scm:git:git@github.com:juanluisrp/geoserver-rest-client.git</url>
+    </scm>
+    <issueManagement>
+        <system>Redmine</system>
+        <url>http://redmine.emergya.es</url>
+    </issueManagement>
+    <ciManagement>
+        <system>jenkins</system>
+        <url>http://jenkins.emergya.es/jenkins/</url>
+    </ciManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <distributionManagement>
+        <!-- use the following if you're not using a snapshot version. -->
+        <repository>
+            <id>nexus.releases</id>
+            <name>Nexus Releases</name>
+            <url>http://nexus.emergya.es/nexus/content/repositories/releases</url>
+        </repository>
+        <!-- use the following if you ARE using a snapshot version. -->
+        <snapshotRepository>
+            <id>nexus.snapshots</id>
+            <name>Nexus Snapshot</name>
+            <url>http://nexus.emergya.es/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
